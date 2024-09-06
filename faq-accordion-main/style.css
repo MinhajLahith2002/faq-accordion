@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Work Sans", sans-serif;
+}
+body{
+	background: url(./assets/images/background-pattern-desktop.svg) no-repeat;
+	background-color: hsl(275, 100%, 97%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.container{
+	background-color: #fff;
+	width: 550px;
+	padding: 40px 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 15px;
+}
+.container .head{
+	display: flex;
+	gap: 20px;
+	margin-bottom: -20px;
+}
+.container .head h1{
+	font-weight: 900;
+}
+.container .question{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container .question img{
+	cursor: pointer;
+}
+.question h4{
+	cursor: pointer;
+	text-decoration: none;
+}
+.question h4:hover{
+	color: hsl(292, 16%, 49%);
+}
+.container p{
+	color: hsl(292, 42%, 14%);
+	font-size: 16px;
+	margin-top: -10px;
+}
+.hidden{
+	display: none;
+}
+.attribution{
+	margin-top: 40px;
+}
+.container hr{
+	border: 1px solid #d3d3d3;
+	width: 100%;
+	margin-top: -10px;
+}
+
+@media(max-width: 565px){
+	.container{
+		width: 400px;
+		margin: 10px;
+	}
+}
+@media(max-width: 400px){
+	.container{
+		width: 350px;
+		margin: 10px;
+	}
+}
